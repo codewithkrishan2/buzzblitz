@@ -49,6 +49,5 @@ export const deletePostService = (postId) =>{
 //Update Post
 export const updatePostService = (post,postId) =>{
     //console.log("From Post Service");
-    //console.log(post);
     return privateAxios.put(`/post/update/${postId}`, post).then(response=>response.data);
 }
